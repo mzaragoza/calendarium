@@ -1,0 +1,405 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+ *
+ * Youxi v1.3 - Form Stylesheet
+ *
+ * This file is part of Youxi, a HTML5 Business Theme build for sale at ThemeForest.
+ * For questions, suggestions or support request, please mail me at maimairel@yahoo.com
+ *
+ * Development Started:
+ * March 26, 2013
+ *
+ */
+
+/* Form Style
+================================================== */
+
+.form {
+    clear: both;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.form .form-row {
+    margin-bottom: 15px;
+}
+
+/* Button Row
+================================================== */
+
+.form .button-row .btn + .btn,
+.form .button-row .btn-group + .btn,
+.form .button-row .btn + .btn-group {
+    margin-left: 5px;
+}
+
+.form-inline .button-row {
+    margin-left: 160px;
+}
+
+/* Fieldset
+================================================== */
+
+.form fieldset {
+    border: 1px solid #dddddd;
+    padding: 20px 30px 30px;
+    -moz-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.03);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.03);
+}
+
+.form fieldset legend {
+    padding: 0 10px;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.2;
+    display: block;
+    margin-left: -10px;
+}
+
+/* Form Labels
+================================================== */
+
+.form .form-label {
+    cursor: pointer;
+    display: block;
+    line-height: 24px;
+}
+
+.form .form-label .required {
+    color: #f00;
+}
+
+/* Form Inputs
+================================================== */
+
+.form .form-item {
+    position: relative;
+}
+
+.form .form-item .medium {
+    width: 75%;
+}
+
+.form .form-item .large {
+    width: 100%;
+}
+
+.form .form-item .small {
+    width: 50%;
+}
+
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] {
+    border: 1px solid #dbdbdb;
+    padding: 6px 7px;
+    margin: 0;
+    min-height: 34px;
+    line-height: 20px;
+    background-color: #fefefe;
+    outline: none;
+    color: #888888;
+    width: 50%;
+    vertical-align: middle;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -moz-box-shadow: inset 0px 2px 0 rgba(0, 0, 0, 0.03);
+    box-shadow: inset 0px 2px 0 rgba(0, 0, 0, 0.03);
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus {
+    background-color: #ffffff;
+}
+
+.form textarea {
+    height: 10em;
+    resize: none;
+}
+
+.form input[disabled],
+.form select[disabled],
+.form textarea[disabled],
+.form input[readonly],
+.form select[readonly],
+.form textarea[readonly] {
+    background: #f0f0f0;
+}
+
+input[type="text"].search-query {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjE2cHgiPjxwYXRoIGZpbGw9IiNjY2NjY2MiIGQ9Ik0xNC45MDUsMTMuMDkxbC0zLjc1Mi0zLjc1M2MwLjYxLTAuOTQ2LDAuOTcxLTIuMDY5LDAuOTcxLTMuMjc3QzEyLjEyNCwyLjcxOCw5LjQwMywwLDYuMDYyLDAgQzIuNzE4LDAsMCwyLjcxOCwwLDYuMDYxYzAsMy4zNDMsMi43MTgsNi4wNjIsNi4wNjIsNi4wNjJjMS4yMDcsMCwyLjMzLTAuMzU4LDMuMjc3LTAuOTY5bDMuNzUxLDMuNzUyIGMwLjEyNiwwLjEyNiwwLjMzMiwwLjEyNiwwLjQ1NSwwbDEuMzYxLTEuMzYxQzE1LjAzMSwxMy40MiwxNS4wMzEsMTMuMjE2LDE0LjkwNSwxMy4wOTF6IE0xLjkyNCw2LjA2MSBjMC0yLjI3OSwxLjg1Ni00LjEzNiw0LjEzNy00LjEzNmMyLjI4MiwwLDQuMTM3LDEuODU2LDQuMTM3LDQuMTM2YzAsMi4yODItMS44NTUsNC4xMzctNC4xMzcsNC4xMzcgQzMuNzgsMTAuMTk4LDEuOTI0LDguMzQyLDEuOTI0LDYuMDYxeiIvPjwvc3ZnPg==");
+}
+
+/* Column Form Layout
+================================================== */
+
+.form .form-cols {
+    margin-bottom: 20px;
+}
+
+.form .form-cols:before,
+.form .form-cols:after {
+    display: table;
+    content: "";
+}
+
+.form .form-cols:after {
+    clear: both;
+}
+
+.form .form-cols [class^="form-col-"] .form-label,
+.form .form-cols [class*=" form-col-"] .form-label {
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.form .form-cols [class^="form-col-"],
+.form .form-cols [class*=" form-col-"] {
+    float: left;
+    margin-left: 1.8181818181818181%;
+}
+
+.form .form-cols [class^="form-col-"]:first-child,
+.form .form-cols [class*=" form-col-"]:first-child {
+    margin-left: 0;
+}
+
+.form .form-cols .form-item {
+    margin: 0 !important;
+}
+
+.form .form-cols .form-col-8-8 {
+    width: 100%;
+}
+
+.form .form-cols .form-col-7-8 {
+    width: 87.27272727272727%;
+}
+
+.form .form-cols .form-col-6-8 {
+    width: 74.54545454545455%;
+}
+
+.form .form-cols .form-col-5-8 {
+    width: 61.81818181818181%;
+}
+
+.form .form-cols .form-col-4-8 {
+    width: 49.090909090909086%;
+}
+
+.form .form-cols .form-col-3-8 {
+    width: 36.36363636363636%;
+}
+
+.form .form-cols .form-col-2-8 {
+    width: 23.636363636363633%;
+}
+
+.form .form-cols .form-col-1-8 {
+    width: 10.909090909090908%;
+}
+
+.form .form-cols [class^="form-col-"] select,
+.form .form-cols [class^="form-col-"] textarea,
+.form .form-cols [class^="form-col-"] input {
+    width: 100%;
+}
+
+/* Form Layout
+================================================== */
+
+.form.form-inline .form-item, 
+.form .form-inline .form-item {
+    margin-left: 160px;
+}
+
+.form.form-inline .form-label, 
+.form .form-inline .form-label {
+    width: 140px;
+    float: left;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-top: 6px;
+}
+
+.form.form-inline .form-block .form-label, 
+.form .form-inline .form-block .form-label {
+    width: auto;
+    float: none;
+    padding-top: 0;
+    margin-right: 0;
+}
+
+.form.form-inline .form-block .form-item, 
+.form .form-inline .form-block .form-item {
+    margin-left: 0;
+}
+
+/* Form List
+================================================== */
+
+.form .form-list,
+.form .form-list li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.form .form-list li {
+    line-height: 1.5;
+    margin-bottom: 4px;
+}
+
+.form .form-list li:last-child {
+    margin-bottom: 0;
+}
+
+.form .form-inline .form-list, 
+.form-inline .form-list, 
+.form .form-list.inline {
+    margin-top: 6px;
+}
+
+.form .form-list.inline li {
+    display: inline-block;
+    margin: 0 5px 0 0;
+    vertical-align: middle;
+}
+
+.form .form-list li > input,
+.form .form-list li > label {
+    padding: 0;
+    margin: 0 1px 0 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Form Clearfix
+================================================== */
+
+.form .form-row:before,
+.form .form-row:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+
+.form .form-row:after {
+    clear: both;
+}
+
+/* Form Errors
+================================================== */
+
+.form label.error {
+    color: #c83139;
+    display: block;
+    padding: 5px 0 0;
+    font-size: 12px;
+}
+
+/* Media Queries
+================================================== */
+
+@media only screen and (max-width: 767px) {
+    .form-inline .button-row {
+        margin-left: 0;
+    }
+    
+    .form.form-inline .form-label,
+    .form.form-inline .form-item, 
+    .form .form-inline .form-label,
+    .form .form-inline .form-item {
+        display: block;
+        width: 100%;
+        margin: 0;
+        float: none;
+    }
+
+    .form.form-inline .form-label, 
+    .form .form-inline .form-label {
+        padding-top: 0;
+    }
+
+    .form.form-inline .form-list, 
+    .form .form-inline .form-list {
+        float: none;
+        width: auto;
+        display: block;
+    }
+
+    .form .form-list.inline li {
+        float: none;
+        margin-right: 0;
+    }
+
+    .form .form-cols {
+        margin-bottom: 0;
+    }
+
+    .form .form-cols [class^="form-col-"] {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) { 
+    .form .form-item select,
+    .form .form-item textarea,
+    .form .form-item input[type="text"],
+    .form .form-item input[type="password"],
+    .form .form-item input[type="datetime"],
+    .form .form-item input[type="datetime-local"],
+    .form .form-item input[type="date"],
+    .form .form-item input[type="month"],
+    .form .form-item input[type="time"],
+    .form .form-item input[type="week"],
+    .form .form-item input[type="number"],
+    .form .form-item input[type="email"],
+    .form .form-item input[type="url"],
+    .form .form-item input[type="search"],
+    .form .form-item input[type="tel"],
+    .form .form-item input[type="color"] {
+        width: 100%;
+    }
+}

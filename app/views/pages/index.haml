@@ -1,1 +1,291 @@
-This pasge is to explain the calendarium product
+/ Slider Wrap
+.slider-wrap
+  / LayerSlider begin
+  .layerslider{"data-hover-bottom-nav" => "true", "data-show-bar-timer" => "true", "data-show-circle-timer" => "false", :style => "height: 440px;"}
+    / LayerSlider layer (Hot Air Balloon)
+    .ls-layer{:style => "slidedelay: 6000; delayout: 500; transition2d: all;"}
+      / LayerSlider background
+      %img.ls-bg{:alt => "", :src => "/assets/demo/slides/dynamic/bg_1.jpg"}/
+      / LayerSlider sublayers
+      %img.ls-s-1{:alt => "", :rel => "slidedirection: left; scalein: 0.2; durationout: 2000; scaleout: 0.5; durationin: 4000; durationout: 2000;", :src => "/assets/demo/slides/dynamic/balloon.png", :style => "left: 160px; top: 50px;"}/
+      .ls-s-1{:rel => "slidedirection: fade; slideoutdirection: fade; delayin: 2000; scalein: 2; durationin: 1500;", :style => "padding: 10px 20px; border-radius: 3px; background-color: #333333; font-size: 26px; font-weight: 300; white-space: nowrap; color: #ffffff; left: 620px; top: 100px;"}
+        Hi, We're Calendarium...
+      .ls-s-1{:rel => "delayin: 3000; slidedirection: fade; slideoutdirection: bottom;", :style => "left: 620px; top: 175px; font-size: 14px; line-height: 25px; white-space: nowrap; color: #666666;"}
+        To help you keep track Of your events all in one place.
+    / LayerSlider layer (Girl with iPad)
+    -#.ls-layer{:style => "slidedelay: 6000; delayout: 1200; transition2d: all;"}
+      / LayerSlider background
+      %img.ls-bg{:alt => "", :src => "/assets/demo/slides/dynamic/bg_2.jpg"}/
+      / LayerSlider sublayers
+      %img.ls-s-1{:alt => "", :rel => "slidedirection: bottom; slideoutdirection: bottom; durationout: 750; durationin: 750; delayin: 750; delayout: 1000;", :src => "/assets/demo/slides/dynamic/girl.png", :style => "left: 382px; top: 60px;"}/
+      %img.ls-s-1{:alt => "", :rel => "slidedirection: right; slideoutdirection: right; durationout: 750; durationin: 750; delayout: 1000;", :src => "/assets/demo/slides/dynamic/imac.png", :style => "left: 687px; top: 100px;"}/
+      %img.ls-s-1{:alt => "", :rel => "slidedirection: top; slideoutdirection: right; durationout: 750; durationin: 750; delayin: 500; delayout: 1000;", :src => "/assets/demo/slides/dynamic/iphone.png", :style => "left: 697px; top: 260px;"}/
+      .ls-s-1{:rel => "slidedirection: fade; slideoutdirection: left; delayin: 1500; delayout: 1000; durationin: 500; durationout: 500;", :style => "padding: 10px 20px; border-radius: 3px; background-color: #ffffff; font-size: 26px; color: #181818; white-space: nowrap; left: 80px; top: 90px;"}
+        Why do we    Youxi?
+      .ls-s3.accent{:rel => "slidedirection: fade; scalein: 0; delayin: 1500; delayout: 750; scaleout: 3;", :style => "font-size: 18px; left: 239px; top: 108px;"}
+        %i.icon-heart
+      .ls-s-1{:rel => "slidedirection: bottom; slideoutdirection: bottom; delayin: 2500; durationin: 250; durationout: 400; delayout: 800;", :style => "font-size: 14px; color: #787878; left: 90px; top: 172px;"}
+        %span{:style => "margin-right: 5px;"}
+          %i.icon-ok-2
+        Fully Responsive Layout
+      .ls-s-1{:rel => "slidedirection: bottom; slideoutdirection: bottom; delayin: 2700; durationin: 250; durationout: 400; delayout: 600;", :style => "font-size: 14px; color: #787878; left: 90px; top: 206px;"}
+        %span{:style => "margin-right: 5px;"}
+          %i.icon-ok-2
+        Retina Display Ready
+      .ls-s-1{:rel => "slidedirection: bottom; slideoutdirection: bottom; delayin: 2900; durationin: 250; durationout: 400; delayout: 400;", :style => "font-size: 14px; color: #787878; left: 90px; top: 240px;"}
+        %span{:style => "margin-right: 5px;"}
+          %i.icon-ok-2
+        Clean and Professional Design
+      .ls-s-1{:rel => "slidedirection: bottom; slideoutdirection: bottom; delayin: 3100; durationin: 250; durationout: 400; delayout: 200;", :style => "font-size: 14px; color: #787878; left: 90px; top: 274px;"}
+        %span{:style => "margin-right: 5px;"}
+          %i.icon-ok-2
+        W3C Compliant HTML5 & CSS3
+      .ls-s-1{:rel => "slidedirection: bottom; slideoutdirection: bottom; delayin: 3300; durationin: 250; durationout: 400;", :style => "font-size: 14px; color: #787878; left: 90px; top: 308px;"}
+        %span{:style => "margin-right: 5px;"}
+          %i.icon-ok-2
+        Premium Plugins Included
+    / LayerSlider layer (Browsers)
+    .ls-layer{:style => "slidedelay: 6000; delayout: 1200; transition2d: all;"}
+      / LayerSlider background
+      %img.ls-bg{:alt => "", :src => "/assets/demo/slides/dynamic/bg_31.jpg"}/
+      / LayerSlider sublayers
+      %img.ls-s-1{:alt => "", :rel => "slidedirection: top; slideoutdirection: right; rotateout: 180; rotatein: -360; durationout: 1500; durationin: 2000; delayin: 1500; delayout: 1000; easingin: easeOutBounce;", :src => "/assets/demo/slides/dynamic/chrome.png", :style => "left: 222px; top: 280px;"}/
+      .ls-s3{:rel => "slidedirection: fade; scalein: 4; delayin: 4000; easingin: easeOutExpo;", :style => "left: 216px; top: 385px; color: #ffffff; font-size: 13px; padding: 5px 10px;"}
+        Google Chrome
+      %img.ls-s-1{:alt => "", :rel => "slidedirection: top; slideoutdirection: right; rotateout: 180; rotatein: 360; durationout: 1500; durationin: 2000; delayin: 2000; delayout: 1000; easingin: easeOutBounce;", :src => "/assets/demo/slides/dynamic/firefox.png", :style => "left: 342px; top: 280px;"}/
+      .ls-s3{:rel => "slidedirection: fade; scalein: 4; delayin: 4000; easingin: easeOutExpo;", :style => "left: 363px; top: 385px; color: #ffffff; font-size: 13px; padding: 5px 10px;"}
+        Firefox
+      %img.ls-s-1{:alt => "", :rel => "slidedirection: top; slideoutdirection: right; rotateout: 180; rotatein: -360; durationout: 1500; durationin: 2000; delayin: 2500; delayout: 1000; easingin: easeOutBounce;", :src => "/assets/demo/slides/dynamic/safari.png", :style => "left: 462px; top: 280px;"}/
+      .ls-s3{:rel => "slidedirection: fade; scalein: 4; delayin: 4000; easingin: easeOutExpo;", :style => "left: 486px; top: 385px; color: #ffffff; font-size: 13px; padding: 5px 10px;"}
+        Safari
+      %img.ls-s-1{:alt => "", :rel => "slidedirection: top; slideoutdirection: right; rotateout: 180; rotatein: 360; durationout: 1500; durationin: 2000; delayin: 2000; delayout: 1000; easingin: easeOutBounce;", :src => "/assets/demo/slides/dynamic/opera.png", :style => "left: 582px; top: 280px;"}/
+      .ls-s3{:rel => "slidedirection: fade; scalein: 4; delayin: 4000; easingin: easeOutExpo;", :style => "left: 605px; top: 385px; color: #ffffff; font-size: 13px; padding: 5px 10px;"}
+        Opera
+      %img.ls-s-1{:alt => "", :rel => "slidedirection: top; slideoutdirection: right; rotateout: 180; rotatein: -360; durationout: 1500; durationin: 2000; delayin: 1500; delayout: 1000; easingin: easeOutBounce;", :src => "/assets/demo/slides/dynamic/ie.png", :style => "left: 702px; top: 280px;"}/
+      .ls-s3{:rel => "slidedirection: fade; scalein: 4; delayin: 4000; easingin: easeOutExpo;", :style => "left: 730px; top: 385px; color: #ffffff; font-size: 13px; padding: 5px 10px;"}
+        IE8+
+      .ls-s-1{:rel => "slidedirection: fade; slideoutdirection: left; delayout: 1000; durationin: 2000; durationout: 500;", :style => "padding: 10px 20px; border-radius: 3px; background-color: #ffffff; font-weight: 300; font-size: 26px; color: #181818; white-space: nowrap; left: 50%; top: 90px;"}
+        Calendarium Never Abandons Any of These!
+    / LayerSlider layer (Green Planet)
+    .ls-layer{:style => "slidedelay: 5000; delayout: 1200; transition2d: all;"}
+      / LayerSlider background
+      %img.ls-bg{:alt => "", :src => "/assets/demo/slides/dynamic/bg_3.jpg"}/
+      / LayerSlider sublayers
+      %img.ls-s-1{:alt => "", :rel => "slidedirection: right; slideoutdirection: right; scalein: 0.5; rotatein: -32; rotateout: -32; durationout: 2000; durationin: 2000; easingin: easeOutQuad;", :src => "/assets/demo/slides/dynamic/earth.png", :style => "left: 382px; top: 60px;"}/
+      .ls-s-1{:rel => "slidedirection: fade; slideoutdirection: left; rotatein: 180; delayin: 2000;", :style => "padding: 10px 20px; border-radius: 3px; background-color: #3d5066; font-weight: 300; font-size: 26px; color: #ffffff; white-space: nowrap; left: 80px; top: 90px;"}
+        So what are you waiting for?
+      .ls-s-1{:rel => "slidedirection: left; slideoutdirection: fade; scaleout: 4; delayin: 2800;", :style => "padding: 10px 20px; border-radius: 3px; background-color: #ffffff; font-weight: 300; font-size: 20px; color: #181818; white-space: nowrap; left: 80px; top: 160px;"}
+        %a{:href => "http://www.themeforest.net", :style => "color: #181818;"} » Sign Up Now
+  / LayerSlider end
+/ End Slider Wrap
+/ Content
+.content
+  / Highlight
+  .highlight
+    .container
+      .sixteen.columns
+        .highlight-inner
+          .col-text
+            %h2.headline
+              %span.accent> Clean
+              ,
+              %span.accent Elegant
+              and
+              %span.accent Modern
+              Callendar for your scheduling needs
+          .col-btn
+            %a.btn{:href => "#"} Buy Now
+  / End Highlight
+  / Start Content
+  .container.main
+    .row
+      / Feature Text
+      .one-third.column
+        .feature-text.dotted
+          .text
+            %h4.caption
+              %span.icon
+                %i.icon-iphone
+              Fully Responsive Layout
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua.
+      / End Feature Text
+      / Feature Text
+      .one-third.column
+        .feature-text.dotted
+          .text
+            %h4.caption
+              %span.icon
+                %i.icon-eye-open
+              Sharp, Retina Ready Design
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+      / End Feature Text
+      / Feature Text
+      .one-third.column
+        .feature-text.dotted
+          .text
+            %h4.caption
+              %span.icon
+                %i.icon-dislikes
+              Premium Plugins Included
+            Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
+      / End Feature Text
+    -#.row
+      %h3.title
+        %span Featured Work
+      .portfolio-items.clearfix
+        / Portfolio Item
+        .four.columns
+          .portfolio-item
+            %figure.item-image
+              %img{:alt => "", :src => "/assets/demo/work/child.jpg"}/
+              %span.overlay
+                %span.overlay-links
+                  %a{:href => "portfolio-single.html"}
+                    %i.icon-link
+                  %a{:href => "/assets/demo/work/child.jpg", :rel => "magnific-popup", :title => "Hiding From Danger"}
+                    %i.icon-search
+            .item-info
+              %h5.item-title
+                %a{:href => "portfolio-single.html"} Hiding From Danger
+              %span.item-tags wordpress / coding / seo
+        / End Portfolio Item
+        / Portfolio Item
+        .four.columns
+          .portfolio-item
+            %figure.item-image
+              %img{:alt => "", :src => "/assets/demo/work/field.jpg"}/
+              %span.overlay
+                %span.overlay-links
+                  %a{:href => "portfolio-single.html"}
+                    %i.icon-link
+                  %a{:href => "/assets/demo/work/field.jpg", :rel => "magnific-popup", :title => "Working Forever"}
+                    %i.icon-search
+            .item-info
+              %h5.item-title
+                %a{:href => "portfolio-single.html"} Working Forever
+              %span.item-tags wordpress / coding / seo
+        / End Portfolio Item
+        / Portfolio Item
+        .four.columns
+          .portfolio-item
+            %figure.item-image
+              %img{:alt => "", :src => "/assets/demo/work/mask.jpg"}/
+              %span.overlay
+                %span.overlay-links
+                  %a{:href => "portfolio-single.html"}
+                    %i.icon-link
+                  %a{:href => "/assets/demo/work/mask.jpg", :rel => "magnific-popup", :title => "Multiple Identities"}
+                    %i.icon-search
+            .item-info
+              %h5.item-title
+                %a{:href => "portfolio-single.html"} Multiple Identities
+              %span.item-tags wordpress / coding / seo
+        / End Portfolio Item
+        / Portfolio Item
+        .four.columns
+          .portfolio-item
+            %figure.item-image
+              %img{:alt => "", :src => "/assets/demo/work/tongue.jpg"}/
+              %span.overlay
+                %span.overlay-links
+                  %a{:href => "portfolio-single.html"}
+                    %i.icon-link
+                  %a{:href => "/assets/demo/work/tongue.jpg", :rel => "magnific-popup", :title => "Hulk's Tongue"}
+                    %i.icon-search
+            .item-info
+              %h5.item-title
+                %a{:href => "portfolio-single.html"} Hulk's Tongue
+              %span.item-tags wordpress / coding / seo
+        / End Portfolio Item
+    -#.nine.columns
+      .row
+        %h3.title
+          %span Recent Posts
+        / Recent Post
+        %article.post.recent
+          .post-header
+            .post-thumbnail
+              %img{:alt => "", :src => "/assets/demo/blog/thumb1.jpg"}/
+              .overlay
+                %i.icon-pencil
+            .post-title
+              %h4.title-text
+                %a{:href => "blog-single.html"} Apple Hires Paul Wright to Handle iAd Division in EMEA
+              %ul.post-meta
+                %li
+                  %i.icon-history
+                  March 29, 2013
+                %li
+                  %i.icon-chat
+                  %a{:href => "#"} 12 comments
+                %li
+                  %i.icon-user
+                  %a{:href => "#"} Dennis Nedry
+          .post-body
+            %p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem.
+            %a.post-read{:href => "#"} Read More →
+        / End Recent Post
+        / Recent Post
+        %article.post.recent
+          .post-header
+            .post-thumbnail
+              %img{:alt => "", :src => "/assets/demo/blog/thumb2.jpg"}/
+              .overlay
+                %i.icon-film
+            .post-title
+              %h4.title-text
+                %a{:href => "blog-single.html"} Motherland | Mutterland
+              %ul.post-meta
+                %li
+                  %i.icon-history
+                  March 29, 2013
+                %li
+                  %i.icon-chat
+                  %a{:href => "#"} 12 comments
+                %li
+                  %i.icon-user
+                  %a{:href => "#"} Dennis Nedry
+          .post-body
+            %p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem.
+            %a.post-read{:href => "#"} Read More →
+        / End Recent Post
+    -#.seven.columns
+      .row
+        %h3.title
+          %span Testimonials
+        / Testimonial
+        .testimonial
+          .text
+            %article
+              %p Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.
+              %p.author
+                Albus Dumbledore
+                %span Youxi Themes
+            %article
+              %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.
+              %p.author
+                Tom Riddle
+                %span Dementor Themes
+            %article
+              %p Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.
+              %p.author
+                Dolores Umbridge
+                %span Hogwarts
+            %article
+              %p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem.
+              %p.author
+                Hermione Granger
+                %span Envato
+          .photo
+            .photo-holder
+              %img{:alt => "", :src => "/assets/demo/testimonial/1.jpg"}/
+              %img{:alt => "", :src => "/assets/demo/testimonial/2.jpg"}/
+              %img{:alt => "", :src => "/assets/demo/testimonial/3.jpg"}/
+              %img{:alt => "", :src => "/assets/demo/testimonial/4.jpg"}/
+            %span.next
+              %i.icon-angle-left
+            %span.prev
+              %i.icon-angle-right
+        / End Testimonial
+/ End Content
+

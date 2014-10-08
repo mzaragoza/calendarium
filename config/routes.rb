@@ -20,6 +20,9 @@ Calendarium::Application.routes.draw do
   end
 
 
-  match 'ping'  => 'tools#ping', as: :ping, via: :all
+  match 'benefits'  => 'pages#benefits' , as: :benefits , via: :all
+  match 'features'  => 'pages#features' , as: :features , via: :all
+  match 'pricing'   => 'pages#pricing'  , as: :pricing  , via: :all
+  match 'ping'      => 'tools#ping'     , as: :ping     , via: :all
   root :to => 'pages#index'
 end

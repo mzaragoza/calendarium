@@ -1,0 +1,85 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+ *
+ * Youxi v1.3 - IE Stylesheet
+ *
+ * This file is part of Youxi, a HTML5 Business Theme build for sale at ThemeForest.
+ * For questions, suggestions or support request, please mail me at maimairel@yahoo.com
+ *
+ * Development Started:
+ * March 26, 2013
+ *
+ */
+
+/* Form Inputs
+================================================== */
+
+.lt-ie9 select,
+.lt-ie9 textarea,
+.lt-ie9 input[type="text"],
+.lt-ie9 input[type="password"],
+.lt-ie9 input[type="datetime"],
+.lt-ie9 input[type="datetime-local"],
+.lt-ie9 input[type="date"],
+.lt-ie9 input[type="month"],
+.lt-ie9 input[type="time"],
+.lt-ie9 input[type="week"],
+.lt-ie9 input[type="number"],
+.lt-ie9 input[type="email"],
+.lt-ie9 input[type="url"],
+.lt-ie9 input[type="search"],
+.lt-ie9 input[type="tel"],
+.lt-ie9 input[type="color"] {
+    min-height: 20px;
+}
+
+/* Portfolio
+================================================== */
+
+.lt-ie9 .portfolio-item .item-image .overlay {
+	background: transparent;
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#A5EF5C2C,endColorstr=#A5EF5C2C)";
+	zoom: 1;
+}
+
+.lt-ie9 .portfolio-item .item-image .overlay .overlay-links a {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+
+.lt-ie9 .portfolio-item .item-image .overlay .overlay-links a:hover {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+/* Blog Post
+================================================== */
+
+.lt-ie9 .post .post-header .post-thumbnail .overlay {
+	background: transparent;
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000)";
+	zoom: 1;
+	display: none;
+}
+
+.lt-ie9 .post .post-header:hover .post-thumbnail .overlay {
+	display: block;
+}
+
+/* Image Gallery
+================================================== */
+
+.lt-ie9 .img-gallery .media > a > .overlay {
+	display: none;
+	background: transparent;
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#A5EF5C2C,endColorstr=#A5EF5C2C)"; /* IE8 */
+	zoom: 1;
+}
+
+.lt-ie9 .img-gallery .media:hover > a > .overlay {
+	display: block;
+}
+
+/* Pricing Table
+================================================== */
+
+.lt-ie9 .pricing-tables .pricing-table .ribbon {
+	display: none;
+}

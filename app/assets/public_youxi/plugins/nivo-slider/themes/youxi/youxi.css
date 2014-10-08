@@ -1,0 +1,210 @@
+/*
+Skin Name: Nivo Slider Youxi Theme
+Skin URI: -
+Description: NivoSlider Theme for Youxi Website Template.
+Version: 1.0
+Author: Mairel Theafila
+Author URI: http://www.themeforest.net/user/nagaemas
+Supports Thumbs: true
+*/
+
+.theme-youxi .nivoSlider {
+    position: relative;
+    background: #fff url(loading.gif) no-repeat 50% 50%;
+}
+
+.theme-youxi .nivoSlider img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+}
+
+.theme-youxi .nivoSlider a {
+    border: 0;
+    display: block;
+}
+
+.theme-youxi .nivo-controlNav {
+    text-align: center;
+    left: 50%;
+    padding: 0;
+    position: absolute;
+    bottom: 15px;
+    z-index: 99;
+    line-height: 1;
+}
+
+.theme-youxi .nivo-controlNav a {
+    margin: 0 6px;
+    display: inline-block;
+    vertical-align: top;
+    width: 10px;
+    height: 10px;
+    background-color: #000000;
+    text-indent: -9999px;
+    border: 1px solid #eeeeee;
+    border-radius: 50%;
+    position: relative;
+    left: -50%;
+}
+
+.theme-youxi .nivo-controlNav a.active {
+    border-color: #eeeeee;
+    background-color: #eeeeee;
+    box-shadow: inset 0 0 0 2px #000000;
+}
+
+.theme-youxi .nivo-directionNav a {
+    display: block;
+    width: 30px;
+    height: 60px;
+    background-color: #ffffff;
+    text-indent: -9999px;
+    border: 0;
+    opacity: 0;
+    z-index: 99;
+    top: 50%;
+    margin-top: -30px;
+    -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+    -webkit-transform: translateZ(0);
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.theme-youxi .nivoSlider:hover .nivo-directionNav a {
+    opacity: 0.8;
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+.theme-youxi .nivoSlider:hover .nivo-directionNav a:hover {
+    opacity: 1;
+}
+
+.theme-youxi a.nivo-nextNav {
+    right: 0;
+    -webkit-transform-origin: 100% 50%;
+    -webkit-transform: rotateY(-90deg);
+    -moz-transform-origin: 100% 50%;
+    -moz-transform: rotateY(-90deg);
+    transform-origin: 100% 50%;
+    transform: rotateY(-90deg);
+    border-radius: 3px 0 0 3px;
+}
+
+.theme-youxi a.nivo-nextNav:after, 
+.theme-youxi a.nivo-nextNav:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -6px 0 0 -3px;
+    width: 0px;
+    height: 0px;
+    border: 6px solid transparent;
+    border-left-color: #282828;
+}
+
+.theme-youxi a.nivo-nextNav:after {
+    border-width: 5px;
+    border-left-color: #ffffff;
+    z-index: 1;
+    margin: -5px 0 0 -3px;
+}
+
+.theme-youxi a.nivo-prevNav {
+    left: 0;
+    -webkit-transform-origin: 0 50%;
+    -webkit-transform: rotateY(-90deg);
+    -moz-transform-origin: 0 50%;
+    -moz-transform: rotateY(-90deg);
+    transform-origin: 0 50%;
+    transform: rotateY(-90deg);
+    border-radius: 0 3px 3px 0;
+}
+
+.theme-youxi a.nivo-prevNav:after, 
+.theme-youxi a.nivo-prevNav:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -6px 0 0 -9px;
+    width: 0px;
+    height: 0px;
+    border: 6px solid transparent;
+    border-right-color: #282828;
+}
+
+.theme-youxi a.nivo-prevNav:after {
+    border-width: 5px;
+    border-right-color: #ffffff;
+    z-index: 1;
+    margin: -5px 0 0 -7px;
+}
+
+.lt-ie9 .theme-youxi .nivo-directionNav a {
+    display: none;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+
+.lt-ie9 .theme-youxi .nivoSlider:hover .nivo-directionNav a {
+    display: block;
+}
+
+.lt-ie9 .theme-youxi .nivoSlider:hover .nivo-directionNav a:hover {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.theme-youxi .nivo-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+    bottom: 20px;
+    left: 20px;
+    line-height: 1.7;
+    max-width: 300px;
+    padding: 20px;
+    color: #cccccc;
+    opacity: 1;
+}
+
+.lt-ie9 .theme-youxi .nivo-caption {
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2000000,endColorstr=#B2000000)";
+    zoom: 1;
+}
+
+.theme-youxi .nivo-controlNav.nivo-thumbs-enabled {
+    width: 100%;
+}
+
+.theme-youxi .nivo-controlNav.nivo-thumbs-enabled a {
+    width: auto;
+    height: auto;
+    background: #ffffff;
+    padding: 3px;
+    border: none;
+    border-radius: 3px;
+    -moz-box-shadow: 0px 2px 12px -4px #000000;
+    box-shadow: 0px 2px 12px -4px #000000;
+}
+
+.theme-youxi .nivo-controlNav.nivo-thumbs-enabled a.active {
+    -moz-box-shadow: 0px 2px 12px -4px #000000, inset 0 0 0 2px #000000;;
+    box-shadow: 0px 2px 12px -4px #000000, inset 0 0 0 2px #000000;;
+}
+
+.theme-youxi .nivo-controlNav.nivo-thumbs-enabled img {
+    display: block;
+    width: 80px;
+    max-width: none;
+    height: auto;
+}
+
+@media only screen and (max-width: 480px) {
+    .theme-youxi .nivo-controlNav.nivo-thumbs-enabled {
+        display: none;
+    }
+}

@@ -1,0 +1,585 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+ *
+ * Youxi v1.3 - Typography Stylesheet
+ *
+ * This file is part of Youxi, a HTML5 Business Theme build for sale at ThemeForest.
+ * For questions, suggestions or support request, please mail me at maimairel@yahoo.com
+ *
+ * Development Started:
+ * March 26, 2013
+ *
+ */
+
+body {
+	color: #686868;
+	font: 13px/1.8 'Open Sans', Arial, Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Links
+================================================== */
+
+a {
+	color: #ef5c2c;
+	outline: none;
+	text-decoration: none;
+	-webkit-transition: color .2s ease-in-out;
+	-moz-transition: color .2s ease-in-out;
+	transition: color .2s ease-in-out;
+}
+
+a:hover, 
+a:focus {
+	color: #787878;
+}
+
+.accent {
+	color: #ef5c2c;
+}
+
+/* Image
+================================================== */
+
+img {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	vertical-align: middle;
+	-ms-interpolation-mode: bicubic;
+}
+
+img.image-left, 
+img.image-right {
+	padding: 6px;
+	border: 1px solid #ddd;
+	margin-bottom: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+img.image-left {
+	margin-right: 20px;
+	float: left;
+}
+
+img.image-right {
+	margin-left: 20px;
+	float: right;
+}
+
+#map_canvas img,
+.google-maps img {
+	max-width: none;
+}
+
+/* Headings
+================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+	color: #282828;
+	margin: 0 0 20px;
+	line-height: 1.2;
+	font-weight: 600;
+	font-family: inherit;
+}
+
+h1.low-margin, 
+h2.low-margin, 
+h3.low-margin, 
+h4.low-margin, 
+h5.low-margin, 
+h6.low-margin {
+	margin: 0 0 13px;
+}
+
+h5, h6 {
+	margin-bottom: 0.25em;
+}
+
+h1 {
+	font-size: 22px;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+h3 {
+	font-size: 16px;
+}
+
+h4 {
+	font-size: 15px;
+}
+
+h5 {
+	font-size: 14px;
+}
+
+h6 {
+	font-size: 13px;
+}
+
+/* Paragraph, DL
+================================================== */
+
+p {
+	margin: 0 0 20px;
+}
+
+dl {
+	margin: 0 0 20px;
+}
+
+dt {
+	font-weight: 400;
+}
+
+dd {
+	margin-left: 10px;
+}
+
+ul,
+ol {
+	padding: 0;
+	line-height: 2;
+	margin: 0 0 20px 25px;
+}
+
+ul {
+	list-style: square;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+	margin-bottom: 0;
+}
+
+.dropcap {
+	float: left;
+	line-height: 1;
+	font-size: 350%;
+	margin-right: 4px;
+	font-weight: inherit;
+	color: #ef5c2c;
+}
+
+.column-2 {
+	-moz-column-count: 2;
+	-webkit-column-count: 2;
+	column-count: 2;
+}
+
+.column-3 {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+
+/* Blockquote
+================================================== */
+
+blockquote {
+	color: #888888;
+	font-size: 14px;
+	margin: 0 0 30px 0;
+	padding: 30px 40px 10px;
+	position: relative;
+}
+
+blockquote p {
+	position: relative;
+	z-index: 0;
+	margin: 0;
+}
+
+blockquote:before, 
+blockquote:after {
+	font-size: 140px;
+	font-weight: bold;
+	line-height: 1;
+	color: #eeeeee;
+	position: absolute;
+	content: open-quote;
+	font-family: 'Georgia', serif;
+}
+
+blockquote:before {
+	top: -13px;
+	left: -5px;
+}
+
+blockquote:after {
+	content: close-quote;
+	right: 0px;
+	top: 100%;
+	margin-top: -61px;
+}
+
+blockquote small {
+	display: block;
+	color: #ef5c2c;
+	font-size: 13px;
+	font-style: normal;
+}
+
+blockquote small:before {
+	content: '\2014 \00A0';
+}
+
+/* Code Styles
+================================================== */
+
+code,
+pre {
+	padding: 0 3px 2px;
+	font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+	font-size: 12px;
+	color: #282828;
+	border-radius: 3px;
+}
+
+code {
+	padding: 2px 4px;
+	color: #d14;
+	white-space: nowrap;
+	background-color: #fafafa;
+	border: 1px solid #dadada;
+}
+
+pre {
+	display: block;
+	padding: 10px;
+	margin: 0 0 30px;
+	font-size: 13px;
+	line-height: 20px;
+	word-break: break-all;
+	word-wrap: break-word;
+	white-space: pre;
+	white-space: pre-wrap;
+	background-color: #fafafa;
+	border: 1px solid #dadada;
+	border-radius: 3px;
+}
+
+pre code {
+	padding: 0;
+	color: inherit;
+	white-space: pre;
+	white-space: pre-wrap;
+	background-color: transparent;
+	border: 0;
+}
+
+/* Table
+================================================== */
+
+table {
+    max-width: 100%;
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.table th,
+.table td {
+    padding: 8px;
+    line-height: 20px;
+    text-align: left;
+    vertical-align: top;
+    border-top: 1px solid #dddddd;
+}
+
+.table th {
+    font-weight: 600;
+    color: #282828;
+}
+
+.table thead th {
+    vertical-align: bottom
+}
+
+.table caption + thead tr:first-child th,
+.table caption + thead tr:first-child td,
+.table colgroup + thead tr:first-child th,
+.table colgroup + thead tr:first-child td,
+.table thead:first-child tr:first-child th,
+.table thead:first-child tr:first-child td {
+    border-top: 0
+}
+
+.table tbody + tbody {
+    border-top: 2px solid #dddddd
+}
+
+.table .table {
+    background-color: #ffffff
+}
+
+.table-condensed th,
+.table-condensed td {
+    padding: 4px 5px
+}
+
+.table-bordered {
+    border: 1px solid #dddddd;
+    border-collapse: separate;
+    *border-collapse: collapse;
+    border-left: 0;
+    border-radius: 3px;
+}
+
+.table-bordered th,
+.table-bordered td {
+    border-left: 1px solid #dddddd
+}
+
+.table-bordered caption + thead tr:first-child th,
+.table-bordered caption + tbody tr:first-child th,
+.table-bordered caption + tbody tr:first-child td,
+.table-bordered colgroup + thead tr:first-child th,
+.table-bordered colgroup + tbody tr:first-child th,
+.table-bordered colgroup + tbody tr:first-child td,
+.table-bordered thead:first-child tr:first-child th,
+.table-bordered tbody:first-child tr:first-child th,
+.table-bordered tbody:first-child tr:first-child td {
+    border-top: 0
+}
+
+.table-bordered thead:first-child tr:first-child > th:first-child,
+.table-bordered tbody:first-child tr:first-child > td:first-child,
+.table-bordered tbody:first-child tr:first-child > th:first-child {
+    border-top-left-radius: 3px;
+}
+
+.table-bordered thead:first-child tr:first-child > th:last-child,
+.table-bordered tbody:first-child tr:first-child > td:last-child,
+.table-bordered tbody:first-child tr:first-child > th:last-child {
+    border-top-right-radius: 3px;
+}
+
+.table-bordered thead:last-child tr:last-child > th:first-child,
+.table-bordered tbody:last-child tr:last-child > td:first-child,
+.table-bordered tbody:last-child tr:last-child > th:first-child,
+.table-bordered tfoot:last-child tr:last-child > td:first-child,
+.table-bordered tfoot:last-child tr:last-child > th:first-child {
+    border-bottom-left-radius: 3px;
+}
+
+.table-bordered thead:last-child tr:last-child > th:last-child,
+.table-bordered tbody:last-child tr:last-child > td:last-child,
+.table-bordered tbody:last-child tr:last-child > th:last-child,
+.table-bordered tfoot:last-child tr:last-child > td:last-child,
+.table-bordered tfoot:last-child tr:last-child > th:last-child {
+    border-bottom-right-radius: 3px;
+}
+
+.table-bordered tfoot + tbody:last-child tr:last-child td:first-child {
+    border-bottom-left-radius: 0;
+}
+
+.table-bordered tfoot + tbody:last-child tr:last-child td:last-child {
+    border-bottom-right-radius: 0;
+}
+
+.table-bordered caption + thead tr:first-child th:first-child,
+.table-bordered caption + tbody tr:first-child td:first-child,
+.table-bordered colgroup + thead tr:first-child th:first-child,
+.table-bordered colgroup + tbody tr:first-child td:first-child {
+    border-top-left-radius: 3px;
+}
+
+.table-bordered caption + thead tr:first-child th:last-child,
+.table-bordered caption + tbody tr:first-child td:last-child,
+.table-bordered colgroup + thead tr:first-child th:last-child,
+.table-bordered colgroup + tbody tr:first-child td:last-child {
+    border-top-right-radius: 3px;
+}
+
+.table-striped tbody > tr:nth-child(odd) > td,
+.table-striped tbody > tr:nth-child(odd) > th {
+    background-color: #f9f9f9
+}
+
+.table-hover tbody tr:hover > td,
+.table-hover tbody tr:hover > th {
+    background-color: #f5f5f5
+}
+
+/* Word Break
+================================================== */
+
+.word-break {
+	white-space: -moz-pre-wrap; /* Mozilla */ 
+	white-space: -o-pre-wrap; /* Opera 7 */ 
+	word-wrap: break-word; /* IE */ 
+	white-space: pre-wrap; /* CSS 2.1 */ 
+	white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+}
+
+/* Section Title
+================================================== */
+
+.title {
+	position: relative;
+	margin: 0 10px 20px 10px;
+	clear: both;
+}
+
+.column .title, 
+.columns .title {
+	margin: 0 0 20px;
+}
+
+.title > span {
+	display: inline-block;
+	background-color: #ffffff;
+	padding-right: 10px;
+	position: relative;
+	z-index: 1;
+}
+
+.title:after, 
+.title:before {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 1px;
+	top: 50%;
+	margin-top: -2px;
+	left: 0; right: 0;
+	border-top: 1px dotted #dddddd;
+}
+
+.title:before {
+	margin-top: 0;
+	margin-bottom: -2px;
+}
+
+/* Label List
+================================================== */
+
+.label-list {
+	margin: 0 0 30px;
+	padding: 0;
+	list-style: none;
+}
+
+.label-list li:after, 
+.label-list li:before {
+	display: table;
+	content: '';
+	line-height: 0;
+}
+
+.label-list li:after {
+	clear: both;
+}
+
+.label-list li > span {
+	display: block;
+	overflow: hidden;
+}
+
+.label-list li > .label {
+	float: left;
+	width: 100px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+/* Inline List
+================================================== */
+
+.inline-list {
+	margin: 0 0 30px;
+	padding: 0;
+	list-style: none;
+	line-height: 1;
+}
+
+.inline-list li {
+	display: inline-block;
+	padding-right: 12px;
+}
+
+/* Arrow & Check List
+================================================== */
+
+.arrow-list, 
+.check-list {
+	margin: 0 0 30px;
+	padding: 0;
+	list-style: none;
+}
+
+.arrow-list ul, 
+.check-list ul {
+	list-style: none;
+}
+
+.arrow-list li:before, 
+.check-list li:before {
+	line-height: 1;
+	color: #aaaaaa;
+	width: 13px;
+	display: inline-block;
+	margin-right: 5px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.arrow-list li:before {
+	content: '\e02e';
+	font-family: 'icomoon';
+}
+
+.check-list li:before {
+	content: '\2713';
+	font-family: sans-serif;
+}
+
+.arrow-list li a, 
+.check-list li a {
+	color: #686868;
+	outline: none;
+}
+
+.arrow-list li a:hover, 
+.check-list li a:hover {
+	color: #383838;
+}
+
+/* Media Queries
+================================================== */
+
+@media only screen and (max-width: 480px) {
+	img.image-left, 
+	img.image-right {
+		margin: 0 0 10px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+
+	.column-2, 
+	.column-3 {
+		-webkit-column-count: auto;
+		-moz-column-count: auto;
+		column-count: auto;
+	}
+
+	.title {
+		margin: 0 0 20px;
+	}
+}

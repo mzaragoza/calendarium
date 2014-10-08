@@ -1,0 +1,239 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+ *
+ * Youxi v1.3 - Theme Stylesheet
+ *
+ * This file is part of Youxi, a HTML5 Business Theme build for sale at ThemeForest.
+ * For questions, suggestions or support request, please mail me at maimairel@yahoo.com
+ *
+ * Development Started:
+ * March 26, 2013
+ *
+ */
+
+// Variables
+@themeColor: #ef5c2c;
+@bodyBackground: "../img/bg/square_bg.png";
+@bodyBackgroundRetina: "../img/bg/square_bg_@2X.png";
+@bodyBackgroundWidth: 200px;
+@bodyBackgroundHeight: 200px;
+
+// Mixins
+.rgbaBG(@color, @alpha) {
+	background-color: rgba(red(@color), green(@color), blue(@color), 0.65);
+}
+
+.ie-rgbaBG(@color, @alpha) {
+	@argb: argb(rgba(red(@color), green(@color), blue(@color), 0.65));
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=@{argb},endColorstr=@{argb})";
+}
+
+/* Links
+================================================== */
+
+a {
+	color: @themeColor;
+}
+
+.accent {
+	color: @themeColor;
+}
+
+/* Body
+================================================== */
+
+body {
+	background-image: url(@bodyBackground);
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx)
+{
+	body {
+		background-size: @bodyBackgroundWidth @bodyBackgroundHeight;
+		background-image: url(@bodyBackgroundRetina);
+	}
+}
+
+/* Paragraph, DL
+================================================== */
+
+.dropcap {
+	color: @themeColor;
+}
+
+/* Blockquote
+================================================== */
+
+blockquote small {
+	color: @themeColor;
+}
+
+/* Navigation
+================================================== */
+
+.header .navigation > ul > li.nav-guide {
+	background-color: @themeColor;
+}
+
+/* Image Gallery
+================================================== */
+
+.img-gallery .media > a > .overlay {
+	.rgbaBG(@themeColor, 0.65);
+	.rgbaBG(@themeColor, 0.65);
+}
+
+/* Skill
+================================================== */
+
+.skill .bar .inner {
+	background-color: @themeColor;
+}
+
+/* Testimonial
+================================================== */
+
+.testimonial .text .author > span {
+	color: @themeColor;
+}
+
+/* Flickr
+================================================== */
+
+.footer .flickr-stream ul li:hover a {
+	border-color: @themeColor;
+}
+
+/* Tags
+================================================== */
+
+.tags li a:hover {
+	background-color: @themeColor;
+	border-color: darken(@themeColor, 10%);
+}
+
+/* Recent Posts
+================================================== */
+
+.recent-posts ul li .info .time {
+	color: @themeColor;
+}
+
+/* Buttons
+================================================== */
+
+.btn {
+	background-color: @themeColor;
+	background-image: -moz-linear-gradient(top, @themeColor, darken(@themeColor, 8%));
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@themeColor), to(darken(@themeColor, 8%)));
+	background-image: -webkit-linear-gradient(top, @themeColor, darken(@themeColor, 8%));
+	background-image: -o-linear-gradient(top, @themeColor, darken(@themeColor, 8%));
+	background-image: linear-gradient(to bottom, @themeColor, darken(@themeColor, 8%));
+	border: 1px solid darken(@themeColor, 10%);
+}
+
+/* Callout
+================================================== */
+
+.callout .headline {
+	color: @themeColor;
+}
+
+/* Tabs
+================================================== */
+
+.tab .tab-nav > li.active {
+	border-bottom: 1px solid @themeColor;
+}
+
+.tab.tab-bordered .tab-nav > li.active, 
+.tab-bordered .tab-nav > li.active {
+	border-top-color: @themeColor;
+}
+
+/* Accordion
+================================================== */
+
+.accordion-header-active {
+	color: @themeColor;
+}
+
+/* Team
+================================================== */
+
+.team .info .job {
+	color: @themeColor;
+}
+
+/* Featured Text
+================================================== */
+
+.feature-text.dotted .text .icon:after {
+	background-color: @themeColor;
+}
+
+/* Portfolio
+================================================== */
+
+.portfolio-item .item-image .overlay {
+	.rgbaBG(@themeColor, 0.65);
+}
+
+/* Filterable Portfolio
+================================================== */
+
+.portfolio-filter > ul li.active a, 
+.portfolio-filter > ul li:hover a {
+	background-color: @themeColor;
+	border-color: darken(@themeColor, 10%);
+}
+
+/* Pricing Table
+================================================== */
+
+.pricing-tables .pricing-table .ribbon-label {
+	border: 1px solid darken(@themeColor, 10%);
+	background-color: @themeColor;
+}
+
+/* Timeline
+================================================== */
+
+.timeline ul li .bullet > span {
+	background-color: @themeColor;
+}
+
+/* Job
+================================================== */
+
+.job-position .job-code > span {
+	color: @themeColor;
+}
+
+/* Pagination
+================================================== */
+
+.pagination > ul li.active a, 
+.pagination > ul li:hover a {
+	background-color: @themeColor;
+	border-color: darken(@themeColor, 10%);
+}
+
+/* Portfolio (IE)
+================================================== */
+
+.lt-ie9 .portfolio-item .item-image .overlay {
+	.ie-rgbaBG(@themeColor, 0.65);
+}
+
+/* Image Gallery (IE)
+================================================== */
+
+.lt-ie9 .img-gallery .media > a > .overlay {
+	.ie-rgbaBG(@themeColor, 0.65);
+}
