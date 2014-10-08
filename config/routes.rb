@@ -1,5 +1,25 @@
 Calendarium::Application.routes.draw do
 
+  devise_for :managers, :controllers => {
+    :sessions => "managers/sessions",
+    :passwords => 'managers/passwords',
+    :confirmations => 'managers/confirmations'
+  }
+
+  authenticate :manager do
+    namespace :managers do
+      resources :managers
+      #resources :accounts
+      #resources :admins
+      resources :profile, :only => [:edit, :update]
+      #mount Resque::Server.new, :at => "/resque"
+      get '/dashboard' => 'dashboards#index', as: :dashboard
+      get '/' => 'dashboards#index'
+      root :to => 'dashboards#index'
+    end
+  end
+
+
   match 'ping'  => 'tools#ping', as: :ping, via: :all
   root :to => 'pages#index'
 end

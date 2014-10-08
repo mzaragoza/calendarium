@@ -1,0 +1,2 @@
+Fabricator(:manager) do
+end

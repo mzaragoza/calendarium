@@ -1,0 +1,18 @@
+!!!
+%html
+  %head
+    %title
+      Calendarium
+    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+    = stylesheet_link_tag "http://yandex.st/bootstrap/3.0.2/css/bootstrap.min.css", media: "all"
+    = javascript_include_tag "http://yandex.st/bootstrap/3.0.2/js/bootstrap.min.js"
+    = csrf_meta_tags
+  %body
+    
+    = link_to destroy_manager_session_path, :class => 'glyphicons power', :method => :delete do
+      %i
+      %span= t(:logout)
+    .container
+      = yield
+

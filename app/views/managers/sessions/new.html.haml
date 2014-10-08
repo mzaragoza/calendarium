@@ -1,0 +1,33 @@
+.single-widget-container
+  %section.widget.login-widget
+    %header.text-align-center
+      %h4 Login 
+    .body
+      = simple_form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f|
+        %fieldset
+          .form-group.no-margin
+            %label{for: "email"} Email
+            .input-group.input-group-lg
+              %span.input-group-addon
+                %i.eicon-user
+              -#%input#email.form-control.input-lg{placeholder: "Your Email", type: "email"}/
+              = f.input :email, label: false, input_html: { class: 'form-control input-lg', placeholder: "Your Email", type: "email" }
+          .form-group
+            %label{for: "password"} Password
+            .input-group.input-group-lg
+              %span.input-group-addon
+                %i.icon-lock
+              -#%input#password.form-control.input-lg{placeholder: "Your Password", type: "password"}/
+              = f.input :password, label: false, input_html: { class: 'form-control input-lg', placeholder: "Your Password", type: "password" }
+        .form-actions
+          = f.button :submit, "Sign in", :class => 'btn btn-block btn-lg btn-danger'
+          .forgot
+            .form-inputs{:style => 'padding-bottom:10px;text-align:center;'}= link_to "Forgot your password?", new_password_path(resource_name)
+    -#%footer
+      .facebook-login
+        %a{href: "index.html"}
+          %span
+            %i.icon-facebook-sign.icon-large
+            LogIn with Facebook
+    =# render "devise/shared/links"
+

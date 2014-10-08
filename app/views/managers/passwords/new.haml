@@ -1,0 +1,17 @@
+#recover
+  .platter
+    .platter-top
+      %h1= t(:forgot_password)
+    = simple_form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post }) do |f|
+      .platter-middle
+        =# render 'shared/alerts'
+      .platter-middle
+        =# render 'shared/simple_form_errors', f: f
+        = f.input :email, label: false, input_html: { class: 'lr-input', placeholder: t(:email).to_s.titleize }
+      .platter-bottom
+        .form-group
+          .platter-split
+            =# link_to 'back', new_user_session_path, class: 'lr-btn btn-block'
+          .platter-split
+            = f.button :submit, "Reset Password",:class => 'lr-btn btn-block'
+

@@ -1,0 +1,16 @@
+#login
+  .container
+    %h1 Change password
+    = simple_form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :put }) do |f|
+      -content_for :error_notification do
+        = f.error_notification
+      = f.input :reset_password_token, :as => :hidden
+      = f.full_error :reset_password_token
+      .form-inputs
+        = f.input :password, label: false, input_html: { class: 'input-block-level margin-none', placeholder: "New Password" }, :required => true
+        %br
+        = f.input :password_confirmation, label: false, input_html: { class: 'input-block-level margin-none', placeholder: "Confirm your new password" }, :required => true
+      .form-actions
+        = f.button :submit, "Change my password", :class => 'btn btn-success btn-block btn-large'
+    =# render "devise/shared/links"
+
