@@ -59,7 +59,8 @@
                     = link_to 'Log In', root_path
                   %li{ class: "#{'active' if params[:action] == ''} " }
                     = link_to 'Sign Up', root_path
-      = yield
+      .content
+        = yield
       %footer.footer
         -#.footer-top
           .container
