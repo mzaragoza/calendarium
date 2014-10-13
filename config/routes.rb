@@ -1,5 +1,17 @@
 Calendarium::Application.routes.draw do
-
+  devise_for :users, :controllers => {
+    registrations: 'users/registrations',
+    :sessions => "users/sessions",
+    :passwords => 'users/passwords',
+    :confirmations => 'users/confirmations'
+  }
+  authenticate :user do
+    namespace :users do
+      get '/dashboard' => 'dashboards#index', as: :dashboard
+      get '/' => 'dashboards#index'
+      root :to => 'dashboards#index'
+    end
+  end
   devise_for :managers, :controllers => {
     :sessions => "managers/sessions",
     :passwords => 'managers/passwords',
