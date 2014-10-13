@@ -9,6 +9,7 @@ Calendarium::Application.routes.draw do
   authenticate :manager do
     namespace :managers do
       resources :managers
+      resources :plans
       #resources :accounts
       #resources :admins
       resources :profile, :only => [:edit, :update]

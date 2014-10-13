@@ -11,10 +11,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141008183610) do
+ActiveRecord::Schema.define(version: 20141012130854) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "accounts", force: true do |t|
+    t.integer  "plan_id"
+    t.string   "name",               default: "",   null: false
+    t.string   "logo",               default: "",   null: false
+    t.string   "address",            default: "",   null: false
+    t.string   "address2",           default: "",   null: false
+    t.string   "city",               default: "",   null: false
+    t.string   "state",              default: "",   null: false
+    t.string   "zip",                default: "",   null: false
+    t.string   "phone",              default: "",   null: false
+    t.string   "website",            default: "",   null: false
+    t.boolean  "active",             default: true, null: false
+    t.string   "stripe_customer_id", default: "",   null: false
+    t.text     "stripe_customer",    default: "",   null: false
+    t.string   "email",              default: "",   null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "managers", force: true do |t|
     t.string   "email",                  default: "",   null: false
@@ -51,5 +70,23 @@ ActiveRecord::Schema.define(version: 20141008183610) do
   add_index "managers", ["email"], name: "index_managers_on_email", unique: true, using: :btree
   add_index "managers", ["reset_password_token"], name: "index_managers_on_reset_password_token", unique: true, using: :btree
   add_index "managers", ["unlock_token"], name: "index_managers_on_unlock_token", unique: true, using: :btree
+
+  create_table "plans", force: true do |t|
+    t.boolean  "active",                             default: true
+    t.boolean  "featured",                           default: false
+    t.decimal  "price",      precision: 8, scale: 2
+    t.string   "name",                               default: ""
+    t.string   "slug",                               default: ""
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "subscriptions", force: true do |t|
+    t.string  "account_id"
+    t.integer "plan_id"
+    t.string  "name",                                           default: ""
+    t.decimal "price",                  precision: 8, scale: 2
+    t.string  "stripe_subscription_id",                         default: ""
+  end
 
 end
