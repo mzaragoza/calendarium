@@ -1,0 +1,22 @@
+.page-header
+  .container
+    .sixteen.columns
+      %h1.page-title
+        Sign In
+.content.container.main
+  .row
+    .sixteen.columns
+      = simple_form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f|
+        .form-row
+          %label.form-label{:for => "contactform_email"} Email
+          .form-item
+            = f.input :email, label: false, input_html: { class: 'form-control input-lg', placeholder: "Your Email", type: "email" }
+        .form-row
+          %label.form-label{:for => "contactform_password"} Password
+          .form-item
+            = f.input :password, label: false, input_html: { class: 'form-control input-lg', placeholder: "Your Password", type: "password" }
+        .button-row
+          = f.button :submit, "Sign in", :class => 'btn btn-block btn-lg btn-danger'
+          .forgot
+            .form-inputs{:style => 'padding-bottom:10px;text-align:center;'}= link_to "Forgot your password?", new_password_path(resource_name)
+            .form-inputs{:style => 'padding-bottom:10px;text-align:center;'}= link_to "Create Account", new_user_registration_path, class: 'btn'
